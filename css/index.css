@@ -1,3 +1,340 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p, li {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* ////////// HOME PAGE \\\\\\\\\\ */
+
+/* Styling Nav */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	top: 0;
+	padding: 15px 0;
+	text-align: center;
+	background-image: linear-gradient(to right, rgb(36, 112, 170), rgb(40, 104, 148));
+  box-shadow: 0px 2px 6px black;
+	position: fixed;
+	z-index: 1;
+}
+.logo {
+	margin-right: 20px;
+}
+nav {
+	width: 70%;
+	display: flex;
+	align-items: center;
+  justify-content: space-around;
+	flex-wrap: wrap;
+  text-align: center;
+}
+nav a {
+	text-decoration: none;
+  font-family: Bebas Neue;
+  color: #eee;
+	font-size: 2rem;
+}
+nav a:hover {
+	color: black;
+}
+
+
+/* Styling Header */
+header {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#header-section {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 5rem;
+	text-align: center;
+	padding-top: 150px;
+}
+#header-section div {
+	margin-right: 15%;
+}
+.button {
+	font-family: Bebas Neue;
+	text-decoration: none;
+  background-color: rgb(36, 112, 170);
+	color: #eee;
+	padding: 5px 30px;
+	font-size: 2.5rem;
+	border-radius: 10px;
+	box-shadow: 1px 2px 6px black;
+}
+.button:hover {
+	background-color: rgb(26, 79, 120);
+	color: black;
+}
+
+/* Styling Sections */
+.page {
+	display: block;
+	margin: 50px auto;
+	width: 80%;
+}
+.section {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 30px 0 30px 50%;
+	transform: translate(-50%);
+}
+.section-section {
+	width: 49%;
+	text-align: left;
+}
+.section-section2 {
+	width: 32%;
+}
+.section-section p {
+	text-align: justify;
+}
+.middle-img {
+	width: 100%;
+	display: block;
+	margin: 0 auto 30px;
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+.contact ul li {
+	margin-bottom: 20px;
+}
+
+hr {
+	border: solid 1px black;
+	background: black;
+}
+
+/* Styling Footer */
+footer {
+	text-align: center;
+	margin: 50px 0;
+}
+
+/* ////////// SERVICES PAGE \\\\\\\\\\ */
+
+/* Header */
+#services-header {
+	text-align: justify;
+	padding: 80px 0 50px;
+}
+#services-header h1 {
+	font-size: 3rem;
+	margin-top: 20px;
+}
+.services-header-img, .services-info-img {
+	width: 100%;
+}
+
+/* Main Section */
+.section-grid {
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.grid {
+	margin: 20px 0;
+	padding: 30px;
+	width: 49%;
+	background-color: #eee;
+	border: solid 1px rgb(36, 112, 170);
+	border-radius: 3px;
+}
+.grid p {
+	margin-bottom: 25px;
+}
+.grid .button {
+	font-size: 2rem;
+}
+
+/* End Section */
+.list {
+	list-style: square inside;
+	margin-top: 20px;
+}
+h2 {
+	color: rgb(36, 112, 170);
+}
+.margin-correcting {
+	margin-right: 10px;
+}
+
+/* ////////// MEDIA QUERIES \\\\\\\\\\ */
+@media (max-width: 800px) {
+  /* Base */
+  html {
+    font-size: 58%;
+  }
+  /* Navbar */
+  .navbar {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  nav {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+  .logo {
+  	margin-right: 0;
+  }
+  /* Header */
+  header #home-header-img {
+    display: none;
+  }
+  #header-section div {
+    margin: 0;
+  }
+  /* Services Page */
+  #services-header {
+    padding-top: 100px;
+  }
+	.section-last {
+		flex-direction: column;
+		align-items: center;
+	}
+	.list {
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 600px) {
+  /* Base */
+  html {
+    font-size: 55%;
+  /* Home Page */
+  }
+	section {
+		flex-direction: column;
+		align-items: center;
+	}
+  /* Services Page */
+	.grid {
+		width: 100%;
+	}
+	.section-section, .section-section2 {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 500px) {
+  /* Base */
+  html {
+    font-size: 50%;
+  }
+  /* Home Page */
+  .navbar {
+    position: relative;
+    padding-bottom: 0;
+    border: solid 1px black;
+  }
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+  nav a {
+    width: 100%;
+    font-size: 2.5rem;
+    padding: 8px 0;
+    border-top: solid 1px black;
+  }
+  nav a:hover {
+    background-color: rgb(26, 79, 120);
+  }
+  nav a:active {
+    color: black;
+    background-color: rgb(26, 79, 120);
+  }
+  #header-section {
+    padding-top: 50px;
+  }
+  /* Services Page */
+  #services-header {
+    padding-top: 0;
+  }
+}
